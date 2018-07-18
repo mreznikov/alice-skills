@@ -25,7 +25,7 @@ def main():
 
     response = {
         "version": request.json['version'],
-        "session": request.json['session'],
+        "session": equest.json['session'],r
         "response": {
             "end_session": False
         }
@@ -53,11 +53,11 @@ def handle_dialog(req, res):
             'suggests': [
                 "Не хочу.",
                 "Не буду.",
-                "Отстань!",
+                "Отстань",
             ]
         }
 
-        res['response']['text'] = 'Привет! Купи слона!'
+        res['response']['text'] = 'Привет! Купи слона!!!!'
         res['response']['buttons'] = get_suggests(user_id)
         return
 
